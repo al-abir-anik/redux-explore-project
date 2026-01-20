@@ -1,14 +1,16 @@
-import { Button } from "./components/ui/button"
+import { Outlet } from "react-router";
+import Navbar from "./components/layout/Navbar";
+
 
 function App() {
-
   return (
-    <>
-    <p>yooooooooooooo</p>
-    <Button>Shad bhai</Button>
-    </>
-  )
-  
+    <div className="">
+      <Navbar />
+      <main className="max-w-7xl mx-auto px-5 my-10">
+        <Outlet />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
